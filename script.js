@@ -131,12 +131,6 @@ function dataURItoBlob(dataURI) {
 	return new Blob([arrayBuffer], { type: mimeString });
 }
 
-prompts.forEach((prompt) => {
-	const option = document.createElement("option");
-	option.text = prompt.description;
-	option.value = prompt["prompt"];
-	promptSelect.add(option);
-});
 setCamera();
 
 promptSelect.addEventListener("change", (e) => {
