@@ -1,0 +1,168 @@
+* {
+	font-weight: 300;
+	font-family: system-ui;
+	--primary: #588fec;
+	--bg: #1b1b1b;
+	--text: #ffffff;
+	--thickness: 1px;
+}
+
+@media (prefers-color-scheme: light) {
+	* {
+		--primary: #588fec;
+		--text: #1b1b1b;
+		--bg: #ffffff;
+	}
+
+	button:hover,
+	select:hover {
+		color: var(--bg);
+	}
+
+	img {
+		background-color: black;
+		border-radius: 50%;
+	}
+}
+
+html {
+	margin: 0;
+	padding: 0;
+	background-color: #ddd0d0;
+	color: black;
+}
+
+select {
+	background-color: var(--bg);
+	color: var(--text);
+	cursor: pointer;
+	text-align: center;
+	padding: 1em 2em;
+	border: 1px solid var(--primary);
+	border-radius: 4px;
+	font-size: 1em;
+	width: 100%;
+	margin-bottom: 0.5em;
+}
+
+video {
+	border-radius: 4px;
+}
+
+.stuff {
+	margin: auto;
+	width: 70vw;
+}
+
+.stuff > h1 {
+	margin-bottom: 1.5em;
+	font-size: 3em;
+	font-weight: 100;
+	text-align: center;
+}
+
+textarea {
+	height: 280px;
+	background-color: var(--bg);
+	color: var(--text);
+	border: var(--thickness) solid var(--primary);
+	padding: 0.5em;
+	border-radius: 3px;
+	font-size: 1.2em;
+	margin-bottom: 10px;
+}
+
+.right {
+	width: 50%;
+	margin-left: 1em;
+	display: flex;
+	flex-direction: column;
+}
+
+button {
+	cursor: pointer;
+	margin-top: 1em;
+	width: 100%;
+	padding: 1em 2em;
+	background-color: var(--bg);
+	color: var(--text);
+	border: var(--thickness) solid var(--primary);
+	border-radius: 4px;
+	font-size: 1.2em;
+}
+
+.left {
+	width: 50%;
+	margin-left: 1.5em;
+}
+
+video {
+	max-width: 100%;
+}
+
+.flex {
+	display: flex;
+}
+
+#response {
+	margin-bottom: 3em;
+}
+
+button:hover,
+select:hover {
+	background-color: var(--primary);
+	transition: all 200ms;
+}
+
+input[type="password"] {
+	background-color: var(--bg);
+	color: var(--text);
+	border: var(--thickness) solid var(--primary);
+	padding: 0.5em;
+	margin-bottom: 3px;
+	border-radius: 3px;
+}
+
+
+@media only screen and (max-width: 1000px) {
+	.flex {
+		flex-direction: column;
+		align-items: center;
+		max-width: 95vw;
+	}
+
+	.left,
+	.right {
+		height: auto;
+		width: 90vw;
+		margin: 0;
+	}
+
+	.stuff {
+		max-width: 100vw;
+		margin: auto;
+	}
+
+	button,
+	select {
+		width: 90vw;
+		margin-bottom: 10px;
+	}
+	.stuff > h1 {
+		margin-bottom: 1em;
+		font-size: 2em;
+		font-weight: 100;
+	}
+
+	textarea {
+		height: 200px;
+	}
+}
+
+.speech-checkbox {
+	margin-top: 0.5em;
+}
+
+.speech-checkbox > input {
+	cursor: pointer;
+}
