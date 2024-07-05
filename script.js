@@ -133,7 +133,4 @@ function dataURItoBlob(dataURI) {
 
 setCamera();
 
-promptSelect.addEventListener("change", (e) => {
-	document.querySelector("#prompt").value = promptSelect.value;
-});
 document.querySelector("button").addEventListener("click", captureImage);
